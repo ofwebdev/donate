@@ -1,0 +1,268 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+/* Color Schema  */
+:root {
+    --primary-color: #ff5959;
+    --text-gray: #707070;
+    --primary-bg: #fff4d6;
+    --hover-bg: #ffeeee;
+    --white: #ffffff;
+}
+
+html {
+    font-size: 10px;
+}
+
+.btn-primary {
+    font-size: 2rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: .5rem;
+    padding: 2rem 4rem;
+    border: 0;
+}
+
+.heading-primary h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.heading-primary p {
+    color: var(--text-gray);
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    outline: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header One */
+.header-one {
+    background-image: linear-gradient(to bottom, rgba(3, 0, 0, 0.283), rgb(0, 0, 0)), url(https://www.neefusa.org/sites/default/files/field/image/WEB19-HealthWellness-GivingBack-Volunteering-Donating-4800x2699.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+.header-one h1 {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.header-one p {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* Header Two */
+
+
+main {
+    width: 1170px;
+    margin: auto;
+}
+
+/* Donate */
+.donate {
+    text-align: center;
+    margin: 10.3rem 0px;
+}
+
+.donate__amount {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+.donate__amount>div {
+    font-size: 3rem;
+    color: var(--text-gray);
+    font-weight: 700;
+    background-color: #fafafa;
+    padding: 4rem;
+    border-radius: .5rem;
+    border: 2px solid transparent;
+}
+
+.donate__amount>div:hover {
+    border: 2px solid var(--primary-color);
+    background-color: var(--hover-bg);
+    color: var(--primary-color)
+}
+
+.donate__custom-amount--field {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid var(--text-gray);
+    font-size: 2rem;
+    width: 500px;
+    margin-bottom: 3rem;
+    height: 4rem;
+    text-align: center;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.donate__custom-amount--field:focus {
+    outline: none;
+}
+
+/* Donate plan  */
+.donate-plan {
+    text-align: center;
+    margin: 10.3rem 0px;
+}
+
+.plan {
+    display: flex;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+
+.plan [class*="plan-"] {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    text-align: left;
+    border-radius: .5rem;
+}
+
+.plan [class*="plan-"]>h3 {
+    font-size: 2rem;
+    margin: 2rem 0rem;
+
+}
+
+.plan [class*="plan-"]>p {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+}
+
+.plan-one {
+    background: #edf5f6;
+}
+
+.plan-two {
+    background: #ffeeee;
+}
+
+.plan-three {
+    background: var(--primary-bg);
+}
+
+
+/* their-live  */
+.their-live {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 10.3rem;
+}
+
+.their-live img,
+.they-survive img {
+    width: 60%;
+    height: 40rem;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+/* They Survive */
+.they-survive {
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 10.3rem;
+}
+
+/* Get Update */
+.get-our-update {
+    text-align: center;
+    margin-bottom: 10.3rem;
+
+}
+
+.news-later {
+    background-color: var(--primary-bg);
+    width: 70rem;
+    padding: 4rem;
+    margin: auto;
+    border-radius: .5rem;
+}
+
+.news-later input {
+    height: 5rem;
+    border: none;
+}
+
+.news-later form input:nth-of-type(1) {
+    background-color: #ccc;
+    padding: 0 1rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    width: 300px;
+}
+
+.news-later form input:nth-of-type(2) {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1rem 3rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+
+}
+
+.news-later form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer  */
+footer {
+    text-align: center;
+    padding: 10rem;
+    background-color: #000;
+}
+
+footer h1 {
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Lobster Two', cursive;
+    font-size: 3.6rem;
+    color: var(--primary-color);
+    font-style: italic;
+    font-weight: 700;
+}
