@@ -30,6 +30,18 @@ html {
     border-radius: .5rem;
     padding: 2rem 4rem;
     border: 0;
+    font-weight: 600;
+}
+
+.btn-video{
+    font-size: 2rem;
+    color: var(--text-gray);
+    background-color: transparent;
+    border-radius: .5rem;
+    padding: 2rem 4rem;
+    border: 0;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 .heading-primary h2 {
@@ -79,6 +91,48 @@ body {
 }
 
 /* Header Two */
+
+.header-two {
+    display: flex;
+    width: 1170px;
+    margin: auto;
+    align-items: center;
+    height: 100vh;
+}
+
+.left-side {
+    width: 70%
+}
+
+.left-side h1 {
+    font-size: 6.4rem;
+    margin-bottom: 3rem;
+}
+
+.left-side p {
+    font-size: 1.5rem;
+    color: var(--text-gray);
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.left-side .btn-group {
+    display: flex;
+}
+
+.right-side {
+    background-image: url(../images/donate.png), url(../images/ellips.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-position: center bottom;
+    height: 85vh;
+}
 
 
 main {
